@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/background.jpg);
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .clearfix{clear: both;}
+   
+    img{max-width: 100%;}
+}
+
+@media screen and(min-width :600px){
+    body{
+        background-attachment: fixed;
+    }
+}

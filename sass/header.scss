@@ -1,0 +1,86 @@
+.header{
+    .logo{margin: 5px 5px -2px 5px;
+       img{
+        max-width: 100%;
+        }
+    }
+    .topnav{
+        background: #c09855;
+        max-width: 997px;
+        margin: 0 auto 50px;
+        line-height: normal;
+        display: none;
+        a{
+            display: block;
+                height: 45px;
+                line-height: 45px;
+                font-size: 18px;
+                letter-spacing: 2px;
+                border-bottom: solid 2px #654c22;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+        }
+        .facebook{
+            background-color: #3b5998;
+            color: #ffffff;
+            border-bottom: solid 2px #8b9dc3;
+            &:hover{
+                background-color: #8b9dc3;
+            }
+        }
+    }
+.hamburger {    
+    border-bottom: solid 2px #654c22;   
+    display: block;
+    background: #c09855;
+    height: 45px;
+a{
+    line-height: 45px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 40px;
+}
+    span {
+        @include hamburger;
+        width: 30px;
+        margin: 10px;
+        float: right;
+                          
+        &:before {
+            @include hamburger;
+            margin: 10px 0;
+        }
+        &:after {
+            @include hamburger;
+            margin: -5px 0;
+        }
+    }
+}
+    .ytmovie{
+        iframe{
+            max-width: 94%;
+            margin: 10px;
+        }
+    }
+}
+@media screen and(min-width :1000px){
+    .header{
+        .hamburger{
+            display: none;
+        }
+        .topnav{
+            display: flex !important;
+            a{
+                flex-grow: 1;
+                transition: 500ms;
+                &:hover{
+                    background-color: #654c22;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin hamburger {
+    content: "";
+    background-color: #000;
+    display: block;
+    height: 4px;
+    border-radius: 20%;
+}

@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/background.jpg);
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body .clearfix {
+    clear: both; }
+  body img {
+    max-width: 100%; }
+
+@media screen and (min-width: 600px) {
+  body {
+    background-attachment: fixed; } }
+.header .logo {
+  margin: 5px 5px -2px 5px; }
+  .header .logo img {
+    max-width: 100%; }
+.header .topnav {
+  background: #c09855;
+  max-width: 997px;
+  margin: 0 auto 50px;
+  line-height: normal;
+  display: none; }
+  .header .topnav a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-bottom: solid 2px #654c22;
+    font-weight: bold;
+    text-decoration: none;
+    color: black; }
+  .header .topnav .facebook {
+    background-color: #3b5998;
+    color: #ffffff;
+    border-bottom: solid 2px #8b9dc3; }
+    .header .topnav .facebook:hover {
+      background-color: #8b9dc3; }
+.header .hamburger {
+  border-bottom: solid 2px #654c22;
+  display: block;
+  background: #c09855;
+  height: 45px; }
+  .header .hamburger a {
+    line-height: 45px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 40px; }
+  .header .hamburger span {
+    content: "";
+    background-color: #000;
+    display: block;
+    height: 4px;
+    border-radius: 20%;
+    width: 30px;
+    margin: 10px;
+    float: right; }
+    .header .hamburger span:before {
+      content: "";
+      background-color: #000;
+      display: block;
+      height: 4px;
+      border-radius: 20%;
+      margin: 10px 0; }
+    .header .hamburger span:after {
+      content: "";
+      background-color: #000;
+      display: block;
+      height: 4px;
+      border-radius: 20%;
+      margin: -5px 0; }
+.header .ytmovie iframe {
+  max-width: 94%;
+  margin: 10px; }
+
+@media screen and (min-width: 1000px) {
+  .header .hamburger {
+    display: none; }
+  .header .topnav {
+    display: flex !important; }
+    .header .topnav a {
+      flex-grow: 1;
+      transition: 500ms; }
+      .header .topnav a:hover {
+        background-color: #654c22; } }
+.content {
+  background: #dbd5c9;
+  padding: 5px;
+  line-height: 20px;
+  margin: 50px;
+  border: solid 1px;
+  border-radius: 5%;
+  font-size: 12px; }
+  .content h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 50px 0; }
+  .content h1 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px; }
+  .content p {
+    margin: 0 10px; }
+  .content img {
+    display: block;
+    margin: 50px auto; }
+  .content .arrow {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    display: none; }
+
+.regulations {
+  text-align: left; }
+  .regulations .hide {
+    display: none; }
+  .regulations .regulations__list--number {
+    list-style-type: decimal;
+    font-weight: bold;
+    font-size: 14px;
+    list-style-position: inside; }
+  .regulations .regulations__list--alpha {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    font-weight: normal;
+    font-size: 12px; }
+    .regulations .regulations__list--alpha li {
+      margin: 30px 10px; }
+    .regulations .regulations__list--alpha a {
+      text-decoration: none;
+      font-weight: bold;
+      color: brown; }
+  .regulations .read-more-show, .regulations .read-more-content .read-more-hide {
+    text-decoration: none;
+    color: brown;
+    padding: 20px;
+    display: table; }
+  .regulations .read-more-content {
+    margin: 20px 0px 0px 0px; }
+    .regulations .read-more-content ul {
+      list-style-type: circle;
+      list-style-position: inside;
+      font-weight: normal;
+      font-size: 12px; }
+      .regulations .read-more-content ul li {
+        margin: 0px 10px 20px 10px; }
+
+.clans p {
+  margin: 10px; }
+  .clans p b {
+    font-size: 12px;
+    font-weight: bolder;
+    color: indigo; }
+  .clans p strong {
+    color: red; }
+.clans .clans__display {
+  display: none; }
+
+@media screen and (min-width: 750px) {
+  .content {
+    font-size: 14px;
+    line-height: 40px; }
+    .content h2 {
+      font-size: 16px; }
+    .content .img_Hero-left {
+      float: left;
+      margin: 50px; }
+    .content .img_Hero-right {
+      float: right;
+      margin: 50px; }
+
+  .regulations .regulations__list--number {
+    margin: 50px;
+    font-size: 16px; }
+    .regulations .regulations__list--number .regulations__list--alpha {
+      font-size: 14px;
+      padding: 20px 0 20px 0; }
+    .regulations .regulations__list--number .read-more-content ul {
+      font-size: 14px;
+      overflow: hidden; }
+      .regulations .regulations__list--number .read-more-content ul li {
+        margin: 50px 0px 0px 0px; }
+
+  .clans .clans__display {
+    display: block; }
+  .clans .clans__other {
+    display: flex; }
+    .clans .clans__other .clans__other--flex {
+      flex-grow: 1;
+      text-align: center; }
+      .clans .clans__other .clans__other--flex .clans__other--mobile {
+        display: none; } }
+.footer {
+  font-size: 9px;
+  background-color: lightseagreen; }
+
+/*# sourceMappingURL=style.css.map */
